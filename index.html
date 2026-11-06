@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TAP NOVA Privacy Policy</title>
+  <title>TAPNOVA Privacy Policy</title>
   <style>
     :root {
       color-scheme: dark;
@@ -32,6 +32,10 @@
       font-size: 1.15rem;
       margin: 28px 0 8px;
     }
+    h3 {
+      font-size: 1rem;
+      margin: 20px 0 6px;
+    }
     p, li {
       color: #d5dced;
     }
@@ -45,39 +49,127 @@
 </head>
 <body>
   <main>
-    <h1>TAP NOVA Privacy Policy</h1>
+    <h1>TAPNOVA Privacy Policy</h1>
     <p class="updated">Last updated: 6 November 2026</p>
-    <p>TAP NOVA (“the game”, “we”) is a single-player mobile game. This policy explains what information the game uses.</p>
+    <p>TAPNOVA (“the game”, “we”) is a single-player mobile arcade game. This policy describes the information TAPNOVA uses, what stays on your device, and what third-party services may process when you play.</p>
+    <p>TAPNOVA does not require an account, email address, or player profile. We do not operate a player database or our own backend that stores gameplay or advertising data.</p>
 
-    <h2>1. No account</h2>
-    <p>The game does not require registration, email, or a player profile. We do not operate a player database.</p>
+    <h2>Information We Collect</h2>
+    <p>TAPNOVA itself stores progress and settings on your device. Advertising and payment providers may collect additional information when their SDKs run. We describe each category below based on TAPNOVA’s current code and the providers’ published disclosures. Where a category is handled only by a third party, we say so.</p>
 
-    <h2>2. Saved on your device</h2>
-    <p>Progress, settings, stars, and purchase flags are stored locally on your device (app preferences). This data stays on the device unless you delete the app or clear its data.</p>
+    <h3>Device information</h3>
+    <p>TAPNOVA does not independently inventory your hardware. The Google Mobile Ads SDK may receive information needed to request and display ads, such as device type, operating system, language, and display characteristics. TAPNOVA does not request access to your contacts, photos, microphone, or precise GPS location.</p>
 
-    <h2>3. Advertising</h2>
-    <p>The game shows ads through Google AdMob (banner, interstitial, and rewarded ads) unless you have purchased No Ads. AdMob may collect a device advertising identifier, IP address, and approximate location to provide and measure ads. On iOS 14 and later we ask for tracking permission. You can decline; ads may still appear in a less personalized form.</p>
-    <p>Google’s policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+    <h3>IP address</h3>
+    <p>When ads are requested, the Google Mobile Ads SDK collects the device’s IP address. Google states that this may be used to estimate the general location of a device. TAPNOVA does not declare location permissions for GPS or coarse location APIs, and TAPNOVA does not collect precise location.</p>
 
-    <h2>4. In-app purchases</h2>
-    <p>No Ads is a one-time purchase processed by Apple or Google. Purchase receipts are validated by the store. We do not receive your full payment card details.</p>
-
-    <h2>5. Analytics and crash reports</h2>
-    <p>The game does not include a third-party analytics or crash SDK at this time.</p>
-
-    <h2>6. Children</h2>
-    <p>The game is a general-audience arcade title and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
-
-    <h2>7. Your choices</h2>
+    <h3>Advertising ID and device identifiers</h3>
+    <p>The Google Mobile Ads SDK may collect advertising and device identifiers, including:</p>
     <ul>
-      <li>iOS: Settings → Privacy → Tracking</li>
-      <li>Android: Google Settings → Ads</li>
-      <li>Delete the app to remove local save data</li>
-      <li>Restore Purchases recovers a previous No Ads purchase</li>
+      <li>On Android: the advertising ID and app set ID, and other identifiers related to signed-in accounts on the device if applicable.</li>
+      <li>On iOS: the advertising identifier (IDFA) if you grant App Tracking Transparency permission, and other app- or developer-bounded identifiers used for ads.</li>
+    </ul>
+    <p>On iOS 14 and later, TAPNOVA asks for tracking permission before ads are initialized. If you decline, ads may still appear in a less personalized form, and the ads SDK does not send IDFA. You can also reset or limit the advertising ID in your device settings.</p>
+
+    <h3>Advertising interaction data</h3>
+    <p>The Google Mobile Ads SDK may collect ad-related interaction information, including app launch signals, taps, and video views associated with ads. TAPNOVA shows banner, interstitial, and rewarded ads unless you have purchased No Ads. Purchasing No Ads stops TAPNOVA from displaying those ads. The ads SDK may still initialize as part of app startup.</p>
+
+    <h3>Diagnostics and crash-related information</h3>
+    <p>TAPNOVA does not include a third-party analytics or crash-reporting SDK such as Firebase Analytics or Crashlytics, and TAPNOVA does not operate its own crash-reporting service.</p>
+    <p>Google states that the Google Mobile Ads SDK may collect diagnostic and crash-related information about SDK and app performance, such as app launch time, hang rate, energy use, and non-user-associated crash logs. That information is processed by Google for advertising, analytics, and fraud-prevention purposes described in Google’s documentation. TAPNOVA does not receive a copy of those diagnostics.</p>
+
+    <h3>Locally stored game progress and settings</h3>
+    <p>TAPNOVA stores the following on your device using app preferences (PlayerPrefs), not on our servers:</p>
+    <ul>
+      <li>Endless best score, tutorial completion, language, theme, audio, and vibration settings</li>
+      <li>Level progress, stars, spendable stars, and power-up inventory</li>
+      <li>Daily free power-up counters</li>
+      <li>A local No Ads entitlement flag after a verified store purchase or restore</li>
+    </ul>
+    <p>This local data stays on the device unless you delete TAPNOVA or clear its data.</p>
+
+    <h3>Purchase-related information</h3>
+    <p>No Ads is a one-time, non-consumable in-app purchase processed by Google Play Billing on Android and Apple StoreKit on iOS, through Unity IAP. Apple and Google handle payment. TAPNOVA does not receive your full payment card details.</p>
+    <p>After the store confirms a valid purchase or restore, TAPNOVA stores a local entitlement flag so ads can be turned off. Purchase receipts and billing records are managed by Apple or Google. TAPNOVA does not operate a server that stores purchase history.</p>
+
+    <h2>How We Use Information</h2>
+    <p>Information is used as follows:</p>
+    <ul>
+      <li><strong>Displaying advertisements.</strong> The Google Mobile Ads SDK uses device, identifier, IP, and interaction data to request and show banner, interstitial, and rewarded ads, unless No Ads is active.</li>
+      <li><strong>Measuring ad performance.</strong> Google may use ad interaction and related diagnostic data to measure ads, as described in Google’s policies.</li>
+      <li><strong>Preventing fraudulent activity.</strong> Google states that ads-related data may be used for fraud prevention. TAPNOVA does not operate a separate fraud-detection service.</li>
+      <li><strong>Improving application stability.</strong> TAPNOVA does not collect first-party crash reports. Ads-SDK diagnostics described above may be used by Google to keep the ads SDK working. TAPNOVA does not use that data to profile players.</li>
+      <li><strong>Processing No Ads purchases.</strong> Apple or Google process the payment. TAPNOVA uses the store result only to grant or restore the local No Ads entitlement.</li>
+      <li><strong>Maintaining game progress and settings.</strong> Local app preferences keep your progress, settings, and entitlement available the next time you open TAPNOVA.</li>
+    </ul>
+    <p>Where required by law, Google’s User Messaging Platform may show a consent message before personalized ads are requested.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>TAPNOVA currently uses only the services below. Unused products such as Firebase Analytics, Crashlytics, or other attribution SDKs are not included.</p>
+
+    <h3>Google AdMob</h3>
+    <p>Used for advertising and ad measurement (banner, interstitial, and rewarded ads), including Google’s User Messaging Platform for consent messages where required. Google’s Mobile Ads SDK may collect and share the data types listed in Google’s disclosures.</p>
+    <ul>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+      <li>How Google uses data from partners: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+      <li>AdMob help: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+      <li>Google Play data disclosure for the Google Mobile Ads SDK: <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">https://developers.google.com/admob/android/privacy/play-data-disclosure</a></li>
+      <li>App Store data disclosure for the Google Mobile Ads SDK: <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">https://developers.google.com/admob/ios/privacy/data-disclosure</a></li>
     </ul>
 
-    <h2>8. Contact</h2>
-    <p>Use the support email published on the TAP NOVA App Store or Google Play listing.</p>
+    <h3>Google Play Billing</h3>
+    <p>Used for the Android No Ads in-app purchase. Google processes the transaction and related billing records.</p>
+    <ul>
+      <li>Google Payments Privacy Notice: <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice">https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice</a></li>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+    </ul>
+
+    <h3>Apple StoreKit</h3>
+    <p>Used for the iOS No Ads in-app purchase. Apple processes the transaction and related billing records.</p>
+    <ul>
+      <li>Apple Privacy Policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+      <li>App Store &amp; Privacy: <a href="https://www.apple.com/legal/privacy/data/en/app-store/">https://www.apple.com/legal/privacy/data/en/app-store/</a></li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>TAPNOVA does not operate a player database and does not share local game saves with other companies.</p>
+    <p>Advertising data described above is collected and shared by the Google Mobile Ads SDK with Google and, according to Google, used for advertising, analytics, and fraud prevention. Payment data is processed by Google Play Billing or Apple StoreKit. TAPNOVA does not receive or resell payment-card details.</p>
+    <p>TAPNOVA does not sell local game progress, settings, or player lists. TAPNOVA is not a data broker. Personalized advertising involves sharing device and advertising identifiers with Google as described in this policy and in Google’s own policies. Whether that sharing is treated as a “sale” or “share” under a particular privacy law depends on that law; we do not claim that advertising SDKs never disclose identifiers to advertising partners.</p>
+
+    <h2>Data Storage and Retention</h2>
+    <p>Game progress, settings, and the local No Ads flag are stored on your device until you delete TAPNOVA or clear the app’s data.</p>
+    <p>Purchase records are retained by Apple or Google under their own retention policies. TAPNOVA does not keep a copy of those store records on a TAPNOVA server.</p>
+    <p>Advertising, diagnostic, and identifier data processed by Google is retained according to Google’s policies, which TAPNOVA does not control.</p>
+
+    <h2>Data Deletion</h2>
+    <p>Uninstalling TAPNOVA, or clearing TAPNOVA’s app data in your device settings, deletes locally stored progress, settings, and the on-device No Ads flag. Restore Purchases can recover a previous No Ads purchase from Apple or Google after reinstall.</p>
+    <p>Uninstalling TAPNOVA does not automatically delete advertising identifiers, ad-measurement records, or purchase history held by Google or Apple. Those records are managed through the relevant store or Google account settings, or by contacting that provider.</p>
+    <p>If you want help with a deletion request related to TAPNOVA, email <a href="mailto:game.tapnova@gmail.com">game.tapnova@gmail.com</a>. We can explain what is stored on-device and what must be requested from Apple or Google. We cannot delete data that only those companies hold.</p>
+
+    <h2>Data Security</h2>
+    <p>This website is served over HTTPS. Communication with Google and Apple services uses those companies’ transport security (Google states that Google Mobile Ads SDK data is encrypted in transit using TLS).</p>
+    <p>Local TAPNOVA data is stored in the operating system’s app preferences. TAPNOVA does not claim that any system is perfectly secure, and TAPNOVA does not operate a custom server-side security program because TAPNOVA does not host player accounts.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>TAPNOVA is a general-audience arcade game. It is not directed at children under 13, and TAPNOVA’s ads configuration does not treat users as under the age of consent.</p>
+    <p>We do not knowingly collect personal information from children. TAPNOVA does not ask for a child’s name, email address, or other contact details. Advertising identifiers and related ads data may still be processed by Google as described above.</p>
+    <p>This policy does not state TAPNOVA’s store age rating. That rating is set in App Store Connect and Google Play Console and may differ from this description. If you believe a child has provided personal information in connection with TAPNOVA, contact <a href="mailto:game.tapnova@gmail.com">game.tapnova@gmail.com</a>.</p>
+
+    <h2>Your Choices</h2>
+    <ul>
+      <li>iOS: Settings → Privacy &amp; Security → Tracking, and the App Tracking Transparency prompt shown by TAPNOVA</li>
+      <li>Android: Google Settings → Ads (reset or limit the advertising ID)</li>
+      <li>Where a consent message is shown, use that form to manage ads consent</li>
+      <li>Purchase No Ads to stop TAPNOVA from displaying ads</li>
+      <li>Restore Purchases recovers a previous No Ads purchase</li>
+      <li>Delete TAPNOVA or clear its data to remove local save data</li>
+    </ul>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this policy when TAPNOVA’s features, SDKs, or legal requirements change. The “Last updated” date at the top of this page will change when we publish a revision. The current version is always available at this URL.</p>
+
+    <h2>Contact Us</h2>
+    <p>For privacy questions, deletion requests, or other TAPNOVA support, email <a href="mailto:game.tapnova@gmail.com">game.tapnova@gmail.com</a>.</p>
   </main>
 </body>
 </html>
